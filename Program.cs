@@ -8,7 +8,9 @@ namespace bfInterpreter
     {
       string str = System.IO.File.ReadAllText(@".\input.bf");
 
+      Interpreter bf = new Interpreter(str);
       
+      bf.Start();
     }
   }
 }
