@@ -2,11 +2,13 @@
 
 namespace bfInterpreter
 {
-    class Program
+  class Program
+  {
+    static void Main(string[] args)
     {
-        static void Main(string[] args)
-        {
-            Console.WriteLine("Hello World!");
-        }
+      string str = System.IO.File.ReadAllText(@".\input.bf");
+
+      System.Console.WriteLine(str);
     }
+  }
 }
